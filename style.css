@@ -1,0 +1,617 @@
+/*****************************************************************************************
+* CSS 290 - Web Design - Project
+* Author: 	Tommy Armstrong
+* Date:		5/27/2019
+* Description: This is the CSS file that contains the styling for my personal web page.
+* Reference: I followed the tutorial by Mmtuts in his video to help start this webpage.
+* Link: https://www.youtube.com/watch?v=kbLfWKGVsMQ&t=842s
+******************************************************************************************/
+
+
+* {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat';
+	/*background-color: #f3f3f3;*/
+}
+
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+header .header-logo {
+	font-family: 'Cabin Sketch';
+	font-size: 24px;
+	color: #111;
+	font-weight: 900;
+	text-transform: uppercase;
+	display: block; /*easier to style*/
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul {
+	display: block; /*add display: block to center items*/;
+	margin: 0 auto;
+	width: fit-content;
+	font-size: 20px;
+}
+
+header nav ul li {
+	display: inline-block;
+	float: left; /*get rid of gap between links*/
+	list-style: none;
+	padding: 0 16px;
+
+}
+
+header nav ul li a {
+	font-family: 'Cabin Sketch';
+	font-size: 14px;
+	color: #111;
+	text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+	font-weight: 900 !important;
+
+}
+
+@media only screen and (min-width:1000px) {
+
+	header .header-logo {
+
+		line-height: 38px;
+		margin: 31px 0;
+		text-align: left;
+		padding: 20px 20px 20px 40px;
+		border-right: 3px solid #111;
+		float: left;
+	}
+
+
+	header nav ul {
+		float: left;
+		margin: 20px 0 20px 20px;
+	}
+
+	header nav ul li a {
+		font-size: 20px;
+		line-height: 100px;
+	}
+
+}/*end media query for desktop*/
+
+.content {
+	padding-top: 120px;
+}
+
+.home-banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url("banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*cover the entire banner*/
+	display: table;
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.home-banner h2 {
+	font-family: 'Cabin Sketch';
+	font-size: 45px;
+	font-weight: 900;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+}
+
+.home-banner h1 {
+	font-family: 'Amatic SC';
+	font-style: italic;
+	font-size: 28px;
+	font-weight: 100;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+}
+
+.pages div {
+	display: block;
+	margin: 16px 16px 0;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+.pages div h3 {
+	font-family: 'Montserrat';
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	line-height: 100px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width:1000px) {
+
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.home-banner {
+		height: 450px;
+	}
+
+	.home-banner h1 {
+		display: block;
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.pages {
+		overflow: hidden;
+	}
+
+	.pages div {
+		display: block;
+		margin: 20px 10px 0;
+		height: 250px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	.home-box-square {
+		width: calc(25% - 20px) !important;
+	}
+
+	.home-box-rectangle {
+		width: calc(50% - 20px) !important;
+	}
+
+	.pages div h3 {
+		
+		line-height: 250px;
+		
+	}
+
+
+
+}/*end media query*/
+
+/*FOOTER STYLE*/
+
+footer {
+	width: calc(100% - 80px);
+	margin-top: 20px;
+	padding: 40px 40px;
+	background-color: #111;
+	overflow: hidden; /*keep pictures and links contained to footer*/
+}
+
+footer ul {
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+.footer-projects-links {
+	display: none;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;
+	color: #fff;
+}
+
+footer ul li a {
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #fff;	
+	line-height: 40px;
+}
+
+.footer-social {
+	width: 50px; /*width of pictures*/
+	float: right; /*put pictures to the right*/
+
+}
+
+.footer-social img {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+@media only screen and (min-width:1000px) {
+
+	.footer-projects-links {
+		display: block;
+	}
+
+	footer ul {
+		width: fit-content;
+		float: left;
+		padding-left: 20px;
+		padding-right: 30px;
+	}
+
+	footer ul li p {
+		font-family: 'Montserrat';
+		font-size: 24px;
+		color: #fff;	
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+
+}
+
+
+/***********************************************************************************************************************
+					ABOUT ME PAGE STYLE
+************************************************************************************************************************/
+.about-content {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 20px;
+
+}
+
+.about-top {
+	width: 100%;
+	height: calc(100vh - 120px);
+}
+
+.about-top h1 {
+	height: 160px;
+	font-family: 'Cabin Sketch';
+	font-size: 22px;
+	text-align: center;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.slidePicture {
+	display: block;
+	width: 100%;
+	height: calc(100% - 165px);
+	margin: 0 auto;
+	background-image: url(slidepics/slide2.jpeg);
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+	background-size: cover; /*cover the entire banner*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+#slide1 {
+	background-image: url(slidepics/slide1.jpg);
+	background-position: center;
+}
+
+#slide2 {
+	background-image: url(slidepics/slide2.jpeg);
+	background-position: 75% 50%;
+	display: none;
+}
+
+#slide3 {
+	background-image: url(slidepics/slide3.jpg);
+	background-position: center;
+	display: none;
+}
+
+#slide4 {
+	background-image: url(slidepics/slide4.jpg);
+	background-position: 50% 10%;
+	display: none;
+}
+
+.about-info {
+	margin: 15px auto;
+}
+
+
+.about-hobbies {
+	width: 30%;
+	padding-left: 20px;
+	margin-right: 10px;
+	float: left;
+}
+
+.about-hobbies h2 {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
+.about-hobbies ul li {
+	line-height: 24px;
+}
+
+.about-content p {
+	
+	margin-bottom: 8px;
+
+}
+
+@media only screen and (min-width:768px) {
+
+	.about-top h1 {
+		height: 120px;
+	}
+
+	.slidePicture {
+		width: 80%;
+		height: calc(100% - 130px);
+	}
+
+
+}
+
+@media only screen and (min-width:1000px) {
+
+
+	.about-content {
+		width: 100%;
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.about-top {
+		margin-bottom: 20px;
+	}
+	.about-top h1 {
+		height: 120px;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.slidePicture {
+		height: calc(100% - 130px);
+		width: 70%;
+	}
+
+	.about-hobbies {
+		width: 15%;
+	}
+	.about-hobbies h2 {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.about-hobbies ul li {
+		line-height: 32px;
+	}
+
+
+
+}/*end media query for about page*/
+
+/******************************************************************************************
+*					PORTFOLIO STYLE
+*******************************************************************************************/
+.portfolio-content {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.portfolio-top {
+	width: 100%;
+	height: calc(100vh - 120px);
+	overflow: hidden;
+}
+
+.portfolio-top h1 {
+	height: 120px;
+	font-family: 'Cabin Sketch';
+	font-size: 22px;
+	text-align: center;
+	line-height: 31px;
+	text-transform: uppercase;
+}
+
+.scrollbox {
+	display: block;
+	width: 100%;
+	height: calc(95vh - 240px);
+	margin: 0 auto;
+	padding: 2vh 0;
+	background-color: #fff;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+}
+
+.project-link {
+	width: 80%;
+	height: 90%;
+	display: inline-block;
+	margin-left: 10%;
+	margin-right: 20%;
+	background-color: #f3f3f3;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-link a {
+	height: 100%;
+	text-decoration: none !important;
+}
+
+.link-img {
+	width: 100%;
+	height: 90%;
+	background-image: url("projectpics/tribute.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: cover;
+}
+.project1 .link-img {
+	background-image: url("projectpics/tribute.jpg");
+}
+
+.project2 .link-img{
+	background-image: url("projectpics/quote-gen.jpg");
+}
+
+.project3 .link-img{
+	background-image: url("projectpics/weather-app-mobile.jpg");
+}
+
+.project4 .link-img{
+	background-image: url("projectpics/survey-form.jpg");
+}
+
+.project-link .caption {
+	margin-top: 2%;
+	height: 8%;
+}
+
+.portfolio-bottom {
+	overflow: hidden;
+}
+
+.portfolio-content h2 {
+	font-family: 'Cabin Sketch';
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.portfolio-content button {
+	background-color: white;
+	border: 1px solid #111;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+@media only screen and (min-width:1000px) {
+	
+	.portfolio-content {
+		width:85%;
+	}
+	.portfolio-top h1 {
+		font-size: 40px;
+		line-height: 60px;
+	}
+
+	.project-link {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 35%;
+		
+	}
+	.project3 .link-img {
+		background-image: url("projectpics/weather-app.jpg");
+	}
+	.portfolio-content h2 {
+		font-size: 40px;
+		margin: 20px 0;
+	}
+	.portfolio-bottom p {
+		font-size: 28px;
+		line-height: 50px;
+	}
+
+	.portfolio-content button {
+		font-size: 28px;
+
+	}
+
+}
+
+/***************************************************************************************
+*			CONTACT PAGE STYLE
+****************************************************************************************/
+
+.contact-content {
+	font-size: 16px;
+}
+
+.contact-content h1 {
+	width: 90%;
+	height: 120px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-family: 'Cabin Sketch';
+	font-size: 24px;
+	text-align: center;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+
+form {
+	width: 70%;
+	margin: 20px auto;
+}
+.form-row {
+	padding: 10px;
+}
+
+.form-row p {
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+
+
+input{
+	font-family: 'Montserrat';
+	width: 100%;
+	
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	font-family: 'Montserrat';
+	height: 200px;
+}
+
+input[type="submit"] {
+	margin-bottom: 10px;
+	font-weight: 900;
+}
+
+@media only screen and (min-width:1000px) {
+
+	.contact-content {
+		font-size: 24px;
+	}
+
+	.contact-content h1 {
+		font-size: 35px;
+		line-height: 50px;
+	}
+
+	form {
+		width: 50%;
+	}
+
+	input, textarea {
+		font-size: 20px;
+	}
+
+}
+
+
+
+

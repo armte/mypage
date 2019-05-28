@@ -1,0 +1,94 @@
+<!-- ***************************************************************************************
+* CS 290 Web Design - Project
+* Author: Tommy Armstrong
+* Date: 5/22/2019
+* Description: 	This is the contact page for my personal website. This has several different
+*				input fields to store the contact information of anyone that wants to message 
+*				me. It utilizes a GET request to send the form data.
+********************************************************************************************* -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact ATom</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Montserrat|Open+Sans|Philosopher&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href="index.html" class="header-logo">Just ATom</a>
+		<nav>
+			<ul>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="content">
+		<section class="contact-content">
+			<h1>PLEASE FEEL FREE TO SEND<br>ME A MESSAGE USING THE FORM BELOW</h1>
+			<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+				<div class="form-row">
+					<p>First Name: </p><input type="text" name="first-name">
+				</div>
+				<div class="form-row">
+					<p>Last Name: </p><input type="text" name="last-name">
+				</div>
+				<div class="form-row">
+					<p>Email: </p><input type="email" name="email">
+				</div>
+				<div class="form-row">
+					<p>Message: </p>
+					<textarea name="message">Enter your message here</textarea>
+				</div>
+				<div class="form-row">
+					<input type="submit" value="Submit">
+				</div>
+			</form>
+
+		</section>
+
+	</main>
+
+
+	<!-- FOOTER PAGE CONTENT -->
+	<div class="wrapper">
+		<footer>
+			<ul class="footer-page-links">
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<ul class="footer-projects-links">
+				<li><p>FreeCodeCamp Projects</p></li>
+				<li><a href="https://armte.github.io/tribute/">Tribute Page</a></li>
+				<li><a href="https://armte.github.io/quotegen/">Random Quote Generator</a></li>
+				<li><a href="https://armte.github.io/weatherapp/">Local Weather App</a></li>
+				<li><a href="https://armte.github.io/surveyform/">Hiking Survey Form</a></li>
+			</ul>
+
+			<div class="footer-social">
+
+				<a href="https://www.linkedin.com/in/ta312">
+					<img src="linkedin-logo.png" alt="LinkedIn Logo Icon">
+				</a>
+
+				<a href="https://www.instagram.com/tommya312/">
+					<img src="insta-logo-color.png" alt="Instagram Logo Icon">
+				</a>
+
+				<a href="https://www.facebook.com/tommy.armstrong.73">
+					<img src="facebook-logo.png" alt="Facebook Logo Icon">
+				</a>
+
+			</div>
+
+		</footer>
+	</div>
+</body>
+</html>
