@@ -31,7 +31,7 @@
 	<main class="content">
 		<section class="contact-content">
 			<h1>PLEASE FEEL FREE TO SEND<br>ME A MESSAGE USING THE FORM BELOW</h1>
-			<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+			<form class="contact-form" action="contactform.php" method="POST">
 				<div class="form-row">
 					<p>First Name: </p><input type="text" name="first-name">
 				</div>
@@ -42,11 +42,14 @@
 					<p>Email: </p><input type="email" name="email">
 				</div>
 				<div class="form-row">
-					<p>Message: </p>
-					<textarea name="message">Enter your message here</textarea>
+					<p>Subject: </p><input type="text" name="subject">
 				</div>
 				<div class="form-row">
-					<input type="submit" value="Submit">
+					<p>Message: </p>
+					<textarea name="message" placeholder="Enter your message here"></textarea>
+				</div>
+				<div class="form-row">
+					<button type="submit" name="submit">Send Message</button>
 				</div>
 			</form>
 

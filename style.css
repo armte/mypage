@@ -574,6 +574,7 @@ form {
 
 
 input{
+	display: block;
 	font-family: 'Montserrat';
 	width: 100%;
 	
@@ -586,8 +587,10 @@ textarea {
 	height: 200px;
 }
 
-input[type="submit"] {
+.contact-form button {
+	width: 100%;
 	margin-bottom: 10px;
+	font-family: 'Montserrat';
 	font-weight: 900;
 }
 
@@ -602,6 +605,9 @@ input[type="submit"] {
 		line-height: 50px;
 	}
 
+	.contact-content button {
+		font-size: 20px;
+	}
 	form {
 		width: 50%;
 	}
