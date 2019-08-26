@@ -97,7 +97,7 @@ header nav ul li a:hover {
 .home-banner {
 	width: 100%;
 	height: calc(100vh - 100px);
-	background-image: url("banner.jpg");
+	background-image: url("banner-min.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover; /*cover the entire banner*/
@@ -293,7 +293,7 @@ footer ul li a {
 	width: 100%;
 	height: calc(100% - 165px);
 	margin: 0 auto;
-	background-image: url(slidepics/slide2.jpeg);
+	/*background-image: url(slidepics/slide1-min.jpg);*/
 	background-repeat: no-repeat;
 	background-position: 75% 50%;
 	background-size: cover; /*cover the entire banner*/
@@ -302,12 +302,12 @@ footer ul li a {
 }
 
 #slide1 {
-	background-image: url(slidepics/slide1.jpg);
+	background-image: url(slidepics/slide1-min.jpg);
 	background-position: center;
 }
 
 #slide2 {
-	background-image: url(slidepics/slide2.jpeg);
+	background-image: url(slidepics/slide2-min.jpeg);
 	background-position: 75% 50%;
 	display: none;
 }

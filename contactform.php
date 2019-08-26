@@ -1,4 +1,4 @@
-<? php
+<?php
 	
 
 if(isset($_POST['submit'])) {
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
 	$txt = "You have received an email from ".$firstname." ".$lastname."\n\n".$message;
 
 	mail($mailTo, $subject, $txt, $headers);
-	header("Location: contact.html?mailsent");
+	header("Location: http://justatom.one/contact.html?messagesent");
 
 }
 

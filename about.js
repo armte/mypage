@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', slideShow);
 
 function slideShow() {
 	
-	$("#slide1").delay(8000).fadeOut(3000, function(){
+	$("#slide1").delay(6000).fadeOut(3000, function(){
 		$("#slide2").fadeIn(3000, function(){
-			$("#slide2").delay(8000).fadeOut(3000, function(){
+			$("#slide2").delay(6000).fadeOut(3000, function(){
 				$("#slide3").fadeIn(3000, function(){
-					$("#slide3").delay(8000).fadeOut(3000, function(){
+					$("#slide3").delay(6000).fadeOut(3000, function(){
 						$("#slide4").fadeIn(3000, function(){
-							$("#slide4").delay(8000).fadeOut(3000, function(){
+							$("#slide4").delay(6000).fadeOut(3000, function(){
 								$("#slide1").fadeIn(3000, slideShow);
 							});
 						});
