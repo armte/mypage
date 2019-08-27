@@ -527,6 +527,11 @@ footer ul li a {
 		margin-right: 35%;
 		
 	}
+
+	.scrollbox div:last-child {
+		margin-right: 20%;
+	}
+
 	.project3 .link-img {
 		background-image: url("projectpics/weather-app.jpg");
 	}
