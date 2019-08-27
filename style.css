@@ -465,6 +465,10 @@ footer ul li a {
 	background-position: 50% 0%;
 	background-size: cover;
 }
+
+.project5 .link-img {
+	background-image: url("projectpics/recipe-database.jpg");
+}
 .project1 .link-img {
 	background-image: url("projectpics/tribute.jpg");
 }
