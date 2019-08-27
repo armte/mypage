@@ -458,6 +458,7 @@ footer ul li a {
 
 .project-link a {
 	height: 100%;
+	color: #000;
 	text-decoration: none !important;
 }
 
@@ -492,6 +493,12 @@ footer ul li a {
 .project-link .caption {
 	margin-top: 2%;
 	height: 8%;
+	width: 100%;
+	text-align: center;
+}
+
+.caption p {
+	font-weight: 600;
 }
 
 .portfolio-bottom {
